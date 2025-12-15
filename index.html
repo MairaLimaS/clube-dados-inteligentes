@@ -43,6 +43,7 @@
     border-radius: 25px;
     display: inline-block;
   }
+  
   .intro-section {
     padding: 40px;
     text-align: center;
@@ -60,6 +61,7 @@
     max-width: 800px;
     margin: 0 auto 15px;
   }
+  
   .problems {
     padding: 40px;
     background: #fff;
@@ -93,6 +95,7 @@
     margin: 0;
     line-height: 1.5;
   }
+  
   .niveis-section {
     padding: 40px;
     background: #f8fcfb;
@@ -134,6 +137,7 @@
   .nivel-1 .nivel-header { background: linear-gradient(135deg, #3498db, #2980b9); }
   .nivel-2 .nivel-header { background: linear-gradient(135deg, #0E6251, #139a74); }
   .nivel-3 .nivel-header { background: linear-gradient(135deg, #e67e22, #d35400); }
+  
   .nivel-header h3 {
     margin: 0 0 8px 0;
     font-size: 18pt;
@@ -175,6 +179,7 @@
   .nivel-body li:last-child {
     border-bottom: none;
   }
+  
   .diferencial-section {
     padding: 40px;
     background: white;
@@ -211,6 +216,7 @@
     color: #555;
     line-height: 1.5;
   }
+  
   .contact-section {
     background: linear-gradient(135deg, #0E6251 0%, #139a74 100%);
     color: white;
@@ -265,6 +271,7 @@
     transform: scale(1.05);
     box-shadow: 0 5px 20px rgba(255,255,255,0.3);
   }
+  
   .bonus-section {
     padding: 30px 40px;
     background: #fff9e6;
@@ -299,11 +306,22 @@
     font-size: 9pt;
     color: #666;
   }
+  
   @media (max-width: 900px) {
-    .niveis-grid, .diferenciais, .bonus-grid, .contact-info {
+    .niveis-grid {
+      grid-template-columns: 1fr;
+    }
+    .diferenciais {
+      grid-template-columns: 1fr;
+    }
+    .bonus-grid {
+      grid-template-columns: 1fr;
+    }
+    .contact-info {
       grid-template-columns: 1fr;
     }
   }
+  
   @media print {
     body { background: white; }
     .document { box-shadow: none; }
@@ -311,8 +329,209 @@
 </style>
 </head>
 <body>
-<div class="document">
-<!-- Conteúdo conforme fornecido -->
-</div>
+  <div class="document">
+    <!-- Header -->
+    <div class="header">
+      <h1>Clube Dados Inteligentes</h1>
+      <p class="tagline">Seus dados protegidos. Seus clientes entendidos. Seu negócio crescendo.</p>
+      <p class="target">Consultoria em Dados e Privacidade</p>
+    </div>
+
+    <!-- Intro -->
+    <div class="intro-section">
+      <h2>Transforme seus cadastros em inteligência de negócio</h2>
+      <p>
+        Você tem uma lista de clientes, mas não sabe o que fazer com ela? Tem medo de multa da LGPD, 
+        mas não sabe por onde começar? Quer entender quem são seus clientes para vender mais?
+      </p>
+      <p>
+        <strong>O Clube Dados Inteligentes</strong> é a solução completa para você, comerciante das 
+        superquadras, que quer proteger seus dados, organizar seu negócio e tomar decisões mais 
+        inteligentes.
+      </p>
+    </div>
+
+    <!-- Problems -->
+    <div class="problems">
+      <h2>Problemas de LGPD e Privacidade que resolvemos</h2>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <strong>Coleta sem consentimento adequado</strong>
+          <p>Você pede CPF, telefone e e-mail, mas não tem autorização formal documentada. Isso pode gerar multa de até 2% do faturamento.</p>
+        </div>
+        <div class="problem-card">
+          <strong>Dados sem proteção</strong>
+          <p>Cadastros de clientes em planilha compartilhada, cadernos sem controle, acesso liberado para todos da equipe. Alto risco de vazamento.</p>
+        </div>
+        <div class="problem-card">
+          <strong>Falta de Política de Privacidade</strong>
+          <p>A LGPD exige que você informe como usa os dados dos clientes. Sem isso, você está irregular e vulnerável a denúncias.</p>
+        </div>
+        <div class="problem-card">
+          <strong>Sem procedimento para direitos do titular</strong>
+          <p>Cliente pede para excluir seus dados ou saber o que você tem sobre ele? Você não sabe como atender. Isso é obrigação legal.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Níveis -->
+    <div class="niveis-section">
+      <h2>Escolha o nível ideal para você</h2>
+      <p class="niveis-subtitle">Todos os níveis incluem acompanhamento mensal e suporte contínuo</p>
+      
+      <div class="niveis-grid">
+        <!-- Nível 1 -->
+        <div class="nivel-card nivel-1">
+          <div class="nivel-header">
+            <h3>ESSENCIAL</h3>
+            <p class="descricao">Segurança e conformidade</p>
+            <div class="nivel-preco">R$ 497<small>/mês</small></div>
+          </div>
+          <div class="nivel-body">
+            <ul>
+              <li>Adequação completa à LGPD</li>
+              <li>Política de Privacidade personalizada</li>
+              <li>Termos de Uso e Consentimento</li>
+              <li>Formulários corrigidos</li>
+              <li>Treinamento da equipe (2h)</li>
+              <li>1 visita presencial/mês</li>
+              <li>Suporte por e-mail (48h)</li>
+              <li>Checklist LGPD mensal</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Nível 2 -->
+        <div class="nivel-card nivel-2">
+          <div class="nivel-header">
+            <h3>INTELIGENTE</h3>
+            <p class="descricao">Proteção + Análise + Estratégia</p>
+            <div class="nivel-preco">R$ 897<small>/mês</small></div>
+          </div>
+          <div class="nivel-body">
+            <ul>
+              <li><strong>Tudo do ESSENCIAL, mais:</strong></li>
+              <li>Base de dados estruturada</li>
+              <li>Análise mensal de clientes (PDF)</li>
+              <li>Recomendações estratégicas</li>
+              <!--<li>Dashboard visual simplificado</li> -->
+              <li>2 visitas presenciais/mês</li>
+              <li>Suporte prioritário WhatsApp (24h)</li>
+              <li>Reunião mensal de resultados</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Nível 3 -->
+        <div class="nivel-card nivel-3">
+          <div class="nivel-header">
+            <h3>ESTRATÉGICO</h3>
+            <p class="descricao">Consultoria completa sob medida</p>
+            <div class="nivel-preco">R$ 1.497<small>/mês</small></div>
+          </div>
+          <div class="nivel-body">
+            <ul>
+              <li><strong>Tudo do INTELIGENTE, mais:</strong></li>
+              <li>Avaliação de Impacto (DPIA) completa</li>
+              <li>Matriz de riscos de privacidade</li>
+              <li>Procedimentos de resposta a incidentes</li>
+              <li>Registro de Operações de Tratamento</li>
+              <!--<li>Dashboard avançado interativo</li>
+               <li>Análises preditivas</li>-->
+              <li>Curadoria estratégica de dados</li>
+              <li>Reuniões quinzenais (45min)</li>
+              <li>WhatsApp prioritário (12h)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Diferenciais -->
+    <div class="diferencial-section">
+      <h2>Por que escolher o Clube Dados Inteligentes?</h2>
+      <div class="diferenciais">
+        <div class="diferencial-item">
+          <div class="diferencial-content">
+            <strong>Feito para as Superquadras</strong>
+            <p>Entendemos a realidade dos CLS e CLN. Consultoria presencial, no seu comércio, em horários flexíveis.</p>
+          </div>
+        </div>
+        <div class="diferencial-item">
+          <div class="diferencial-content">
+            <strong>Linguagem simples, sem juridiquês</strong>
+            <p>Explicamos tudo de forma clara, como se fosse para um amigo. Você vai entender e saber aplicar.</p>
+          </div>
+        </div>
+        <div class="diferencial-item">
+          <div class="diferencial-content">
+            <strong>Dados que viram ação</strong>
+            <p>Não entregamos só relatórios. Damos recomendações práticas.</p>
+          </div>
+        </div>
+        <div class="diferencial-item">
+          <div class="diferencial-content">
+            <strong>Parceria de longo prazo</strong>
+            <p>Não é "entregar e tchau". Acompanhamos você mês a mês, fazendo seu negócio crescer junto.</p>
+          </div>
+        </div>
+        <div class="diferencial-item">
+          <div class="diferencial-content">
+            <strong>15+ anos de experiência</strong>
+            <p>Especialista que trabalhou em projetos nacionais de dados sensíveis, agora dedicada ao comércio local.</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Bônus -->
+    <div class="bonus-section">
+      <h3>BÔNUS DE LANÇAMENTO - Primeiros 20 Membros</h3>
+      <div class="bonus-grid">
+        <div class="bonus-item">
+          <strong>Taxa de adesão GRÁTIS</strong>
+          <p>Economize R$ 300</p>
+        </div>
+        <div class="bonus-item">
+          <strong>1 mês extra de consultoria</strong>
+          <p>Ao completar 6 meses no clube</p>
+        </div>
+  <!--  <div class="bonus-item">
+          <strong>Workshop exclusivo</strong>
+          <p>"Como Usar Dados para Vender Mais" (3h presencial)</p>
+        </div>
+      </div> -->
+    </div>
+
+    <!-- Contact -->
+    <div class="contact-section">
+      <h2>Pronto para transformar seu negócio?</h2>
+      <p>Agende uma conversa inicial GRATUITA de 30 minutos (presencial no seu comércio ou online)</p>
+      
+      <div class="contact-info">
+        <div class="contact-item">
+          <strong>Telefone</strong>
+          <div>(71) 99923-0111</div>
+        </div>
+        <div class="contact-item">
+          <strong>E-mail</strong>
+          <div>lima.maira.souza@gmail.com</div>
+        </div>
+        <div class="contact-item">
+          <strong>LinkedIn</strong>
+          <div>linkedin.com/in/mairalimas</div>
+        </div>
+      </div>
+      
+      <a href="https://wa.me/5571999230111?text=Olá! Vi o folder do Clube Dados Inteligentes e gostaria de agendar uma conversa inicial." class="cta-button">
+        Falar no WhatsApp Agora
+      </a>
+      
+      <p style="margin-top: 25px; font-size: 10pt; opacity: 0.9;">
+        Atendimento presencial nos CLS e CLN de Brasília | Consultoria online para todo o DF
+      </p>
+    </div>
+  </div>
 </body>
 </html>
